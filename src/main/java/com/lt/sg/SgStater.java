@@ -1,5 +1,7 @@
 package com.lt.sg;
 
+import io.netty.channel.nio.NioEventLoopGroup;
+
 /**
  * @author liangtao
  * @description 启动类
@@ -7,6 +9,8 @@ package com.lt.sg;
  **/
 public class SgStater {
     public static void main(String[] args) {
-        System.out.println("你好");
+        NioEventLoopGroup bossGroup = new NioEventLoopGroup();
+        NioEventLoopGroup workGroup = new NioEventLoopGroup();
+
     }
 }
